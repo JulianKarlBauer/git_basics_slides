@@ -21,9 +21,9 @@ Each slide should be separated with a ---
 Some controls:
 
 - Basic
-    - Quit: q
-    - Previous slide: b, Left arrow, Page Up
-    - Next slide: n, Space bar, Right arrow, Page Down
+  - Quit: q
+  - Previous slide: b, Left arrow, Page Up
+  - Next slide: n, Space bar, Right arrow, Page Down
 
 ---
 
@@ -71,6 +71,13 @@ columns, rows = shutil.get_terminal_size()
 ![RC](images/recurse.png)
 
 ---
+
+# Codio
+
+![codio](codio.yml)
+
+---
+
 <!-- fg=white bg=red -->
 
 ## Colors
@@ -86,6 +93,7 @@ Just add this to the top of your slide:
 Colors: black, red, green, yellow, blue, magenta, cyan, white
 
 ---
+
 <!-- fg=black bg=yellow -->
 
 ## Effects
@@ -101,16 +109,21 @@ Just add this to the top of your slide:
 Effects: fireworks, explosions, matrix, plasma, stars, more coming soon!
 
 ---
+
 <!-- effect=fireworks -->
 
 ---
+
 <!-- effect=explosions -->
 
 ---
+
 <!-- effect=matrix -->
 
 ---
+
 <!-- effect=stars -->
 
 ---
+
 <!-- effect=plasma -->
