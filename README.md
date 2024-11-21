@@ -4,5 +4,28 @@ Slide Deck on Git Basics.
 
 ## Tool Stack
 
-- [slides](https://github.com/maaslalani/slides) (it is Go-Lang) or
-- [present](https://github.com/vinayak-mehta/present) (it is Python)
+- [slides](https://github.com/maaslalani/slides)
+  - Go-Lang
+  - ❌
+    - too basic
+- [present](https://github.com/vinayak-mehta/present)
+  - Python
+  - ❌
+    - Font scaling in terminal is bad
+    - Not pdf support
+- [mdx-deck](https://github.com/jxnblk/mdx-deck)
+  - node
+  - ❌
+    - Could not resolve error
+      ```/home/julian/git/git_basics_slides/mdx_deck/node_modules/gatsby-recipes/dist/graphql-server/server.js:52
+      var remarkMdx = require('remark-mdx');
+      ^
+      Error [ERR_REQUIRE_ESM]: require() of ES Module /home/julian/git/git_basics_slides/mdx_deck/node_modules/gatsby-recipes/node_modules/remark-mdx/index.js from
+      /home/julian/git/git_basics_slides/mdx_deck/node_modules/gatsby-recipes/dist/graphql-server/server.js not supported.
+      Instead change the require of index.js in /home/julian/git/git_basics_slides/mdx_deck/node_modules/gatsby-recipes/dist/graphql-server/server.js to a dynamic
+      import() which is available in all CommonJS modules.
+      at Object.<anonymous> (/home/julian/git/git_basics_slides/mdx_deck/node_modules/gatsby-recipes/dist/graphql-server/server.js:52:17) {
+      code: 'ERR_REQUIRE_ESM'
+      }
+      ```
+- [pandoc](https://pandoc.org/chunkedhtml-demo/10-slide-shows.html)
