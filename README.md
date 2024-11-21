@@ -29,3 +29,15 @@ Slide Deck on Git Basics.
       }
       ```
 - [pandoc](https://pandoc.org/chunkedhtml-demo/10-slide-shows.html)
+  - pandoc installed with conda or `apt-get`
+- [marp](https://github.com/yhatt/marp-cli-example?tab=readme-ov-file)
+  - node
+  - Install VS-Code extension `marp`
+  - Create repository based on this [template-link](https://github.com/yhatt/marp-cli-example/generate)
+  - Enable Github pages if required (Note: Not pretty)
+  - Start / build using npm
+    ```bash
+    npm i
+    npm run start
+    npm run build
+    ```
