@@ -1,1 +1,3 @@
-# git_basics_slides
+# About
+
+Slide Deck on Git Basics.
