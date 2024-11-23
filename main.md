@@ -23,7 +23,7 @@ https://wikipedia.de
 
 ---
 
-Image
+# Pure image slide
 
 ![Marp bg 60%](https://raw.githubusercontent.com/marp-team/marp/master/marp.png)
 
@@ -32,14 +32,20 @@ Image
 <!-- _backgroundColor: "#123" -->
 <!-- _color: "#fff" -->
 
-##### <!--fit--> Some fitting sub heading
+# <!--fit--> Some fitting sub heading
 
 ##### <!--fit--> Another fitting sub heading
+
+#### 4. heading Not fitting
+
+###### 6. heading Not fitting
 
 ---
 
 # New slide
 
 ## Subheading on new slide
+
+nested button with hyperlink and specified size:
 
 [![Deploy to Vercel h:1.5em](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/yhatt/marp-cli-example)
