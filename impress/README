@@ -1,0 +1,11 @@
+# Markdown-based impress slides
+
+Follow http://slideshow-s9.github.io/
+
+```bash
+gem install slideshow
+```
+
+```bash
+slideshow build main.md
+```
