@@ -41,6 +41,7 @@ Slide Deck on Git Basics.
     npm run start
     npm run build
     ```
+  - [Export as pdf](https://pcotret.github.io/marp-to-pdf/): `npx @marp-team/marp-cli main.md -o public/output.pdf --allow-local-files`
 - [impress](https://github.com/impress/impress.js?tab=readme-ov-file)
   - node
   - ❌ not natively supporting markdown
