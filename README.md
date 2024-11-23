@@ -2,46 +2,37 @@
 
 Slide Deck on Git Basics.
 
-## Tool Stack
+## Tool
 
-- [slides](https://github.com/maaslalani/slides)
-  - Go-Lang
-  - ❌
-    - too basic
-- [present](https://github.com/vinayak-mehta/present)
-  - Python
-  - ❌
-    - Font scaling in terminal is bad
-    - Not pdf support
-- [mdx-deck](https://github.com/jxnblk/mdx-deck)
-  - node
-  - ❌
-    - Could not resolve error
-      ```/home/julian/git/git_basics_slides/mdx_deck/node_modules/gatsby-recipes/dist/graphql-server/server.js:52
-      var remarkMdx = require('remark-mdx');
-      ^
-      Error [ERR_REQUIRE_ESM]: require() of ES Module /home/julian/git/git_basics_slides/mdx_deck/node_modules/gatsby-recipes/node_modules/remark-mdx/index.js from
-      /home/julian/git/git_basics_slides/mdx_deck/node_modules/gatsby-recipes/dist/graphql-server/server.js not supported.
-      Instead change the require of index.js in /home/julian/git/git_basics_slides/mdx_deck/node_modules/gatsby-recipes/dist/graphql-server/server.js to a dynamic
-      import() which is available in all CommonJS modules.
-      at Object.<anonymous> (/home/julian/git/git_basics_slides/mdx_deck/node_modules/gatsby-recipes/dist/graphql-server/server.js:52:17) {
-      code: 'ERR_REQUIRE_ESM'
-      }
-      ```
-- [pandoc](https://pandoc.org/chunkedhtml-demo/10-slide-shows.html)
-  - pandoc installed with conda or `apt-get`
-- [marp](https://github.com/yhatt/marp-cli-example?tab=readme-ov-file)
-  - node
-  - Install VS-Code extension `marp`
-  - Create repository based on this [template-link](https://github.com/yhatt/marp-cli-example/generate)
-  - Enable Github pages if required (Note: Not pretty)
-  - Start / build using npm
-    ```bash
-    npm i
-    npm run start
-    npm run build
-    ```
-  - [Export as pdf](https://pcotret.github.io/marp-to-pdf/): `npx @marp-team/marp-cli main.md -o public/output.pdf --allow-local-files`
-- [impress](https://github.com/impress/impress.js?tab=readme-ov-file)
-  - node
-  - ❌ not natively supporting markdown
+We use the (node-based)
+[Markdown presentation ecosystem (Marp)](https://github.com/marp-team/marp)
+based on
+[this template repository](https://github.com/yhatt/marp-cli-example?tab=readme-ov-file).
+
+## Build the Presentation
+
+Install VS-Code extension `marp` to have a real time build during development.
+
+Install required node libraries with
+
+```bash
+npm i
+```
+
+Build the slides
+
+```bash
+npm run build
+```
+
+or alternatively, run the slides in local browser
+
+```bash
+npm run start
+```
+
+or [create a static pdf-file](https://pcotret.github.io/marp-to-pdf/) with
+
+```bash
+npx @marp-team/marp-cli main.md -o public/output.pdf --allow-local-files
+```
