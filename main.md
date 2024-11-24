@@ -63,6 +63,26 @@ Julian Karl Bauer
 
 [git_internals]: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
 
+<!--
+
+Let's start with a simple question: What is Git?
+
+There are certainly a number of legitimate answers...
+For example:
+- ...
+
+-->
+
+---
+
+### Which problem does Git solve?
+
+![bg right:40% 80%](assets/final.png)
+
+---
+
+### Which problem does Git solve?
+
 ---
 
 # Multi columns in Marp slide
