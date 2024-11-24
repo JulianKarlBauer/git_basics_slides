@@ -29,10 +29,13 @@ Thanks for inviting
 
 I really liked Emils presentation
 '...' .
+
 An important building block for all the things Emil had talked about is version control.
 This gave me motivation to kind of recycle a talk on Git basics I gave some years ago.
+
 Probabyl the world changed and all of you have a profound understaning of which version control is and how to use it.
 But I was encouraged, that recaping the basics, might be a thing worth doing.
+
 That's why, I would like to give a very rough introduction to basic concepts of version control, focussing on Git.
 -->
 
@@ -58,6 +61,40 @@ That's why, I would like to give a very rough introduction to basic concepts of 
 - Branching
 - How to ignore specific files?
 - Do you really use a terminal?
+
+---
+
+### Terminology: File structure
+
+<div class="columns">
+
+<div style="display: flex;">
+
+<style scoped>
+pre {
+   font-size: 25px;
+}
+</style>
+
+```bash
+$ tree
+.
+├── dir1
+│   └── file1.txt
+├── dir2
+│   ├── subdir2
+│   │   ├── file5.txt
+│   │   └── file7.txt
+│   └── file8.txt
+├── dir3
+│    ├── file9.txt
+│    ...
+│    └── file12.txt
+...
+
+```
+
+</div>
 
 ---
 
@@ -90,7 +127,7 @@ For example:
 
 ### Which problem does Git solve?
 
-![bg right:40% 80%](assets/final.png)
+![bg right:42% 86%](assets/final.png)
 
 ---
 
@@ -110,15 +147,15 @@ and **enable structured collaboration** among team members.
 
 # Multi columns in Marp slide
 
-<div class="columns">
-<div>
+<div class="columns" style="display: flex;">
+<div style="flex: 1;">
 
 #### Column 1
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eveniet,
 
 </div>
-<div>
+<div style="flex: 2;">
 
 #### Column 2
 
@@ -130,48 +167,3 @@ Tempore ad exercitationem necessitatibus nulla, optio distinctio illo non
 ---
 
 ![bg opacity](./assets/gradient.jpg)
-
-# First slide
-
-Vanilly text
-
-https://wikipedia.de
-
-<style scoped>a { color: #36c; }</style>
-
-<!-- This is presenter note. You can write down notes through HTML comment. -->
-
----
-
-```python
-a = 10
-```
-
----
-
-# Pure image slide
-
-![Marp bg 60%](https://raw.githubusercontent.com/marp-team/marp/master/marp.png)
-
----
-
-<!-- _backgroundColor: "#123" -->
-<!-- _color: "#fff" -->
-
-# <!--fit--> Some fitting sub heading
-
-##### <!--fit--> Another fitting sub heading
-
-#### 4. heading Not fitting
-
-###### 6. heading Not fitting
-
----
-
-# New slide
-
-## Subheading on new slide
-
-nested button with hyperlink and specified size:
-
-[![Deploy to Vercel h:1.5em](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/yhatt/marp-cli-example)
