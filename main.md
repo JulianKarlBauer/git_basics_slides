@@ -125,9 +125,13 @@ For example:
 
 ---
 
+![bg right:42% 86%](assets/final.png)
+
 ### Which problem does Git solve?
 
-![bg right:42% 86%](assets/final.png)
+<sup>[image source][1]</sup>
+
+[1]: https://phdcomics.com/comics/archive_print.php?comicid=1531
 
 ---
 
