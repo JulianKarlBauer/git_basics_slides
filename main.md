@@ -23,11 +23,24 @@ author: Julian Karl Bauer
 04.12.2024
 Julian Karl Bauer
 
+<!--
+Thank you for introduction
+Thanks for inviting
+
+I really liked Emils presentation
+'...' .
+An important building block for all the things Emil had talked about is version control.
+This gave me motivation to kind of recycle a talk on Git basics I gave some years ago.
+Probabyl the world changed and all of you have a profound understaning of which version control is and how to use it.
+But I was encouraged, that recaping the basics, might be a thing worth doing.
+That's why, I would like to give a very rough introduction to basic concepts of version control, focussing on Git.
+-->
+
 ---
 
 <!-- _class: outline -->
 
-### Outline
+### Outline (Just for development of these slides)
 
 - What is Git?
 - Which problem does Git solve?
