@@ -13,6 +13,58 @@ author: Julian Karl Bauer
 # footer:
 ---
 
+# Commit to Git?
+
+#### A short introduction to version control in computational sciences
+
+<br>
+<br>
+
+04.12.2024
+Julian Karl Bauer
+
+---
+
+<!-- _class: outline -->
+
+### Outline
+
+- What is Git?
+- Which problem does Git solve?
+- File structure
+- Actions on a file structure
+- Motivation workflow
+- FINAL.doc
+- What is it like to work with Git?
+- Where does Git store all the information?
+- Example: Change a file
+- Git stages
+- Remote
+- Sequential / Parallel?
+- Conflicts
+- Branching
+- How to ignore specific files?
+- Do you really use a terminal?
+
+---
+
+### What is Git?
+
+<br>
+
+<!-- prettier-ignore-start -->
+
+* Command line interface (CLI)
+* A distributed version control system
+* The second big project of Linus Torvald
+* A [content-addressable filesystem][git_internals]
+
+<!-- prettier-ignore-end -->
+
+[git_internals]: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
+
+---
+
 # Multi columns in Marp slide
 
 <div class="columns">

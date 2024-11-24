@@ -1,15 +1,18 @@
 /* @theme example */
 
-@import 'uncover';
+@import 'default';
 
 section {
-  text-align: left;
-  font-size: 30px;
+  /* text-align: left; */
+  font-size: 35px;
+  font-family: 'Liberation Sans';
   background: #cef;
   color: #135;
 }
 
-
+section.outline {
+  font-size: 15px;
+}
 
 .columns {
   display: grid;
