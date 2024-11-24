@@ -36,3 +36,7 @@ or [create a static pdf-file](https://pcotret.github.io/marp-to-pdf/) with
 ```bash
 npx @marp-team/marp-cli main.md -o public/output.pdf --allow-local-files
 ```
+
+**Notes:**
+
+- [Enable html rending](https://github.com/marp-team/marpit/issues/178#issuecomment-511106762)
