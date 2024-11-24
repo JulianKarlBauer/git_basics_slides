@@ -96,6 +96,16 @@ For example:
 
 ### Which problem does Git solve?
 
+<br>
+
+**Track changes** to a **file structure** including **metadata** on
+
+- Who: Author
+- When: Timestamp
+- Why: Elaboration in commit message
+
+and **enable structured collaboration** among team members.
+
 ---
 
 # Multi columns in Marp slide
