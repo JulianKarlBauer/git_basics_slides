@@ -3,10 +3,35 @@ marp: true
 lang: en-US
 title: Commit to Git?
 description: A short introduction to version control in computational sciences
-theme: uncover
+theme: example
 transition: fade
 paginate: true
-_paginate: false
+_paginate: false # No page number on first slide
+math: mathjax
+author: Julian Karl Bauer
+# header:
+# footer:
+---
+
+# Multi columns in Marp slide
+
+<div class="columns">
+<div>
+
+#### Column 1
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eveniet,
+
+</div>
+<div>
+
+#### Column 2
+
+Tempore ad exercitationem necessitatibus nulla, optio distinctio illo non
+
+</div>
+</div>
+
 ---
 
 ![bg opacity](./assets/gradient.jpg)
@@ -20,6 +45,12 @@ https://wikipedia.de
 <style scoped>a { color: #36c; }</style>
 
 <!-- This is presenter note. You can write down notes through HTML comment. -->
+
+---
+
+```python
+a = 10
+```
 
 ---
 
