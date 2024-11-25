@@ -227,6 +227,25 @@ This helps you to focus on the Why,
 which commonly is ecnoded in terms of a Git commit message.
 This is a free text piece of metadata you can post on every change.
 
+So we can track changes to a file structure.
+What kind of changes are there?
+-->
+
+---
+
+### Which kind of changes to a file structure are there?
+
+<br>
+
+- Change the content of a file (`echo "..." >> file.md`, ...)
+- Create a new file (`touch file.md`, `echo "..." > file.md`, ...)
+- Delete a file (`rm file.md`)
+- Rename / Move a file (`mv file.md file2.md`)
+
+<!--
+The kind of actions are actually limited.
+Which is great.
+We can ...
 -->
 
 ---
