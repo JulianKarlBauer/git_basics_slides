@@ -1,12 +1,14 @@
-# [Terminalizer](https://github.com/faressoft/terminalizer?tab=readme-ov-file)
+# Gifs
 
-## Install
+## [Terminalizer](https://github.com/faressoft/terminalizer?tab=readme-ov-file)
+
+### Install
 
 ```
 npm install -g terminalizer
 ```
 
-## Config
+### Config
 
 Use [ZSH](https://github.com/faressoft/terminalizer?tab=readme-ov-file#how-to-support-zsh)
 
@@ -16,7 +18,7 @@ terminalizer config
 
 See [config.yml](./config.yml).
 
-## Use
+### Use
 
 ```bash
 terminalizer record demo
@@ -29,3 +31,5 @@ terminalizer play demo
 ```bash
 terminalizer render demo
 ```
+
+## Peek
