@@ -155,6 +155,9 @@ who want to dig deeper into the machinery.
 I can't tell you much about it, read it once, forgot it long time ago,
 because it is not really essential for a user of Git.
 
+So, let us focus on Git being a version control system for now.
+What does that mean?
+
 -->
 
 ---
@@ -167,9 +170,38 @@ because it is not really essential for a user of Git.
 
 [1]: https://phdcomics.com/comics/archive_print.php?comicid=1531
 
+<!--
+Which problem does version control solve?
+
+There is this nice visualization of a problem,
+probably everyone who has written a bachelor's or master's thesis,
+might have faced.
+
+You start working on a file (hopefully not using MS Office like in the drawing),
+you reach a reasonable state which seems to be the final one,
+but it isn't.
+You share a state with your collaborators / or supervisor,
+your get back comments, you do changes, you exchange new versions of your work.
+While waiting on the review, you might advance into a different direction.
+
+This process might repeat and you end up with
+several copies with slightly varying content.
+
+This process easily get's confusing,
+especially if you have more than once collaborator
+or more than one route of changes to go (variants..).
+
+For MS Office products, nowadays there are collaboration features in place.
+If your working on text files, no matter whether it is
+code, documentation, presentation, evaluation, visualization,
+there is a class of software that helps you to keep the overview of all the changes.
+
+This class of software is version control systems.
+-->
+
 ---
 
-### Which problem does Git solve?
+### Which problem does version control solve?
 
 <br>
 
@@ -180,6 +212,22 @@ because it is not really essential for a user of Git.
 - Why: Elaboration in commit message
 
 and **enable structured collaboration** among team members.
+
+<!--
+Version control is build to
+...
+
+Using version control, you get the
+- What (the changes)
+- Who (Author) and
+- When (Timestamp)
+for free and automated.
+
+This helps you to focus on the Why,
+which commonly is ecnoded in terms of a Git commit message.
+This is a free text piece of metadata you can post on every change.
+
+-->
 
 ---
 
