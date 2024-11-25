@@ -127,7 +127,7 @@ So essentially it's a folder containing files on your filesystem.
 
 <!-- prettier-ignore-end -->
 
-[git_internals]: https://git-scm.com/book/enin terms of identifiers
+[git_internals]: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
 
 <!--
 
@@ -313,34 +313,55 @@ We can ...
 
 ### How do we use Git?
 
-Sequences of commands within the terminal.
+<br>
 
-```bash
-git_basics_slides git:(content) ✗ npm run build
-
-```
-
----
-
-# Multi columns in Marp slide
+Sequences of command line commands.
 
 <div class="columns" style="display: flex;">
 <div style="flex: 1;">
 
-#### Column 1
+Passive
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eveniet,
+```bash
+git status
+git diff
+git log
+git blame
+...
+```
 
 </div>
-<div style="flex: 2;">
+<div style="flex: 1;">
 
-#### Column 2
+Active
 
-Tempore ad exercitationem necessitatibus nulla, optio distinctio illo non
+```bash
+git add
+git commit
+git push
+git pull
+git merge
+git checkout
+...
+```
 
 </div>
 </div>
+
+or using a graphical interface, e.g., within VSCode.
 
 ---
+
+### Where does Git work?
+
+---
+
+### When does Git work?
+
+---
+
+### When does Git work?
+
+![](assets/ele.gif)
 
 ![bg opacity](./assets/gradient.jpg)
