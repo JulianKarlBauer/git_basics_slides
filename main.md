@@ -51,12 +51,12 @@ Let's start
 
 ### Outline (Just for development of these slides)
 
+- File structure
 - What is Git?
 - Which problem does Git solve?
-- File structure
+  - FINAL.doc
+  - Motivation workflow
 - Actions on a file structure
-- Motivation workflow
-- FINAL.doc
 - What is it like to work with Git?
 - Where does Git store all the information?
 - Example: Change a file
@@ -310,6 +310,15 @@ We can ...
 -->
 
 ---
+
+### How do we use Git?
+
+Sequences of commands within the terminal.
+
+```bash
+git_basics_slides git:(content) ✗ npm run build
+
+```
 
 ---
 
