@@ -24,19 +24,25 @@ author: Julian Karl Bauer
 Julian Karl Bauer
 
 <!--
-Thank you for introduction
-Thanks for inviting
+Thank you for the kind introduction
+and thanks for inviting me.
 
-I really liked Emils presentation
-'...' .
+I really liked the presentation
+'...'
+Emil gave in the last Students Chapter.
 
 An important building block for all the things Emil had talked about is version control.
-This gave me motivation to kind of recycle a talk on Git basics I gave some years ago.
+This gave me motivation to kind of recycle a talk on Git basics I gave several years ago.
 
-Probabyl the world changed and all of you have a profound understaning of which version control is and how to use it.
+Probabyl the world changed and all of you have a profound understaning of
+what version control is and how to use it.
 But I was encouraged, that recaping the basics, might be a thing worth doing.
+I have a feeling that the invitation may have raised expectations
+that are a little too high among experienced Git users.
+Sorry in advance, my talk will be basic.
 
-That's why, I would like to give a very rough introduction to basic concepts of version control, focussing on Git.
+I will give a rough introduction to basic concepts of version control with Git.
+Let's start
 -->
 
 ---
@@ -78,16 +84,18 @@ pre {
 
 ```bash
 $ tree
+
 .
+|
+├── file1.txt
+├── file2.txt
 ├── dir1
-│   └── file1.txt
-├── dir2
-│   ├── subdir2
-│   │   ├── file5.txt
-│   │   └── file7.txt
-│   └── file8.txt
+│   ├── dir2
+│   │   ├── file3.txt
+│   │   └── file4.txt
+│   └── file5.txt
 ├── dir3
-│    ├── file9.txt
+│    ├── file6.txt
 │    ...
 │    └── file12.txt
 ...
@@ -95,6 +103,14 @@ $ tree
 ```
 
 </div>
+
+<!--
+Let's start with some terminology.
+During this talk, I will use the word file structure to refer to
+a bunch of files within potentially nested directories.
+
+So essentially it's a folder containing files on your filesystem.
+-->
 
 ---
 
@@ -104,9 +120,9 @@ $ tree
 
 <!-- prettier-ignore-start -->
 
-* Command line interface (CLI)
+* The second big project of Linus Torvald (the Linux guy)
 * A distributed version control system
-* The second big project of Linus Torvald
+* Command line interface (CLI)
 * A [content-addressable filesystem][git_internals]
 
 <!-- prettier-ignore-end -->
@@ -115,11 +131,29 @@ $ tree
 
 <!--
 
-Let's start with a simple question: What is Git?
+Let's go back to the main question:
+What is Git?
 
 There are certainly a number of legitimate answers...
 For example:
 - ...
+
+These answers address different aspects of Git.
+
+The first one obviously tries to create interest by referencing a well-known person.
+But it might also refer to the significance of Git.
+Like Linux, Git is involved everywhere, once you are able to see it.
+
+The second and third essentially tell you, Git is software
+and you can use it from your terminal.
+And these are the things we will focus on.
+We'll discuss what a distributed version control system is
+and how to use it, focusing on the command line interface.
+
+The fourth information is just a reference for those of you
+who want to dig deeper into the machinery.
+I can't tell you much about it, read it once, forgot it long time ago,
+because it is not really essential for a user of Git.
 
 -->
 
@@ -127,7 +161,7 @@ For example:
 
 ![bg right:42% 86%](assets/final.png)
 
-### Which problem does Git solve?
+### Which problem does version control (e.g., Git) solve?
 
 <sup>[image source][1]</sup>
 
