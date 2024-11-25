@@ -360,8 +360,28 @@ or using a graphical interface, e.g., within VSCode.
 
 ---
 
-### When does Git work?
+### Example: Change a file
 
 ![](assets/ele.gif)
 
-![bg opacity](./assets/gradient.jpg)
+---
+
+### Example: Change a file (VSCode)
+
+---
+
+### Git stages
+
+---
+
+### Remote
+
+---
+
+### Branches
+
+---
+
+### Summary
+
+<!-- ![bg opacity](./assets/gradient.jpg) -->
