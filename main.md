@@ -127,7 +127,7 @@ So essentially it's a folder containing files on your filesystem.
 
 <!-- prettier-ignore-end -->
 
-[git_internals]: https://git-scm.com/book/en/v2/Git-Internals-Git-Objects
+[git_internals]: https://git-scm.com/book/enin terms of identifiers
 
 <!--
 
@@ -201,6 +201,67 @@ This class of software is version control systems.
 
 ---
 
+### Typical workflow of computational science.
+
+![bg right:50% 86%](assets/workflow_01.png)
+
+<!--
+If you're not completely with me,
+when I try to motivate version control systems using proprietary / commercial formats, I understand.
+
+Let's look at a typical workflow in the field of computational science.
+Usually, we start with some kind of data.
+This could be the output of an experient
+or a numerical simulation.
+
+We then do some analysis or further comuptation,
+often based on scripting logic (here called Analysis) which itself makes use of some kind of library.
+We might develop the library on our own as part of a codebase.
+The output of the analysis represents our result,
+which often is a visualization or data prepared to get visualized.
+
+The details to not matter, but I think this general pattern is applicable to most of your projects.
+
+But all of these parts, usually are dynamic, right?
+We work on this project and therefore,
+there might be changes to... which influence the result, ...
+
+Keeping track of these changes, is what version control helps us to do.
+
+Note: We might control the data and results directly,
+or we might choose to reference large data or results
+on a separate file storage, optimized for large data,
+using references.
+There are solutions for handling large data.
+But that's a more advanced topic...
+-->
+
+---
+
+### Typical workflow of computational science.
+
+![bg right:50% 86%](assets/workflow_02.png)
+
+---
+
+### Typical workflow of computational science.
+
+![bg right:50% 86%](assets/workflow_03.png)
+
+---
+
+### Typical workflow of computational science.
+
+![bg right:50% 86%](assets/workflow_04.png)
+
+---
+
+### Typical workflow of computational science.
+
+![bg right:50% 86%](assets/workflow_05.png)
+
+---
+
 ### Which problem does version control solve?
 
 <br>
@@ -247,6 +308,8 @@ The kind of actions are actually limited.
 Which is great.
 We can ...
 -->
+
+---
 
 ---
 
