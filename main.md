@@ -378,10 +378,35 @@ or using a graphical interface, e.g., within VSCode.
 
 ---
 
+### Conflicts
+
+---
+
 ### Branches
 
 ---
 
 ### Summary
+
+- Steps
+  - Work
+  - Stage
+  - Commit
+  - Pull
+  - Push
+- Applications
+  - Code
+  - Latex
+  - Workflows
+
+---
+
+### Outlook
+
+- Github
+- Github Actions
+- Git large file storage (LFS)
+- Hooks, e.g., `pre-commit`
+- Global config (e.g., `.venv`, `.DS_Store`, ...)
 
 <!-- ![bg opacity](./assets/gradient.jpg) -->
