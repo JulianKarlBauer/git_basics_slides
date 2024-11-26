@@ -28,7 +28,7 @@ Thank you for the kind introduction
 and thanks for inviting me.
 
 I really liked the presentation
-'...'
+"Reproducibility and Data Management in Computational Science"
 Emil gave in the last Students Chapter.
 
 An important building block for all the things Emil had talked about is version control.
