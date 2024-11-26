@@ -72,7 +72,7 @@ Let's start
 
 ### Terminology: File structure
 
-<div class="columns">
+<div class="columns2">
 
 <div style="display: flex;">
 
@@ -315,14 +315,24 @@ We can ...
 
 <br>
 
-Sequences of command line commands.
+Sequences of terminal **commands**
+or using a **graphical interface**, e.g., within VSCode.
 
-<div class="columns" style="display: flex;">
-<div style="flex: 1;">
+<br>
+
+<div class="columnsflex">
+<div>
+
+<!-- <style scoped>
+section div {
+   /* flex: 3; */
+   color: red;
+}
+</style> -->
 
 Passive
 
-```bash
+```properties
 git status
 git diff
 git log
@@ -331,11 +341,11 @@ git blame
 ```
 
 </div>
-<div style="flex: 1;">
+<div>
 
 Active
 
-```bash
+```properties
 git add
 git commit
 git push
@@ -348,16 +358,14 @@ git checkout
 </div>
 </div>
 
-or using a graphical interface, e.g., within VSCode.
-
 ---
 
 ### Where does Git work?
 
-<div class="columns" style="display: flex;">
+<div class="columns2">
 <div style="flex: 10;">
 
-```bash
+```properties
 ➜  git_basics_slides tree -a -L 1
 .
 ├── assets
@@ -381,7 +389,7 @@ or using a graphical interface, e.g., within VSCode.
 </div>
 <div style="flex: 8;">
 
-```bash
+```properties
 ➜  .git tree -a -L 1
 .
 ├── branches
@@ -413,9 +421,74 @@ Only during command execution.
 
 ---
 
-### Example: Change a file
+### Example: Existing directory -> Git repository
 
-![](assets/ele.gif)
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns -->
+<br>
+
+<style scoped>
+.columns3 {
+  display: grid;
+  /* display: flex; */
+  grid-template-columns: 1fr 1fr 3fr;
+  gap: 1rem;
+  color: red;
+}
+</style>
+
+<div class="columns3">
+<div>
+
+Directory
+
+```properties
+➜  my_project tree
+.
+└── main.py
+
+0 directories, 1 file
+
+```
+
+</div>
+<div>
+
+File
+
+```python
+# main.py
+
+name = "bill"
+
+print(name)
+
+```
+
+</div>
+<div>
+
+Initialization
+
+```properties
+➜  my_project git init
+Initialized empty Git repository in my_project/.git/
+
+➜  my_project git:(main) ✗ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        main.py
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
+
+</div>
+</div>
+
+<!-- ![](assets/ele.gif) -->
 
 ---
 
