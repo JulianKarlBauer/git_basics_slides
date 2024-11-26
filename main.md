@@ -294,7 +294,7 @@ What kind of changes are there?
 
 ---
 
-### Which kind of changes to a file structure are there?
+### Which types of changes to a file structure are possible?
 
 <br>
 
@@ -353,6 +353,55 @@ or using a graphical interface, e.g., within VSCode.
 ---
 
 ### Where does Git work?
+
+<div class="columns" style="display: flex;">
+<div style="flex: 10;">
+
+```bash
+➜  git_basics_slides tree -a -L 1
+.
+├── assets
+├── .git
+├── .github
+├── .gitignore
+├── LICENSE
+├── main.md
+├── marp.config.mjs
+├── netlify.toml
+├── node_modules
+├── package.json
+├── package-lock.json
+├── prettierignore
+├── public
+├── README.md
+├── themes
+└── .vscode
+```
+
+</div>
+<div style="flex: 8;">
+
+```bash
+➜  .git tree -a -L 1
+.
+├── branches
+├── COMMIT_EDITMSG
+├── config
+├── description
+├── FETCH_HEAD
+├── HEAD
+├── hooks
+├── index
+├── info
+├── logs
+├── objects
+├── ORIG_HEAD
+├── packed-refs
+└── refs
+```
+
+</div>
+</div>
 
 ---
 
