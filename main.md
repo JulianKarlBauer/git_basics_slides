@@ -407,6 +407,10 @@ or using a graphical interface, e.g., within VSCode.
 
 ### When does Git work?
 
+<br>
+
+Only during command execution.
+
 ---
 
 ### Example: Change a file
