@@ -21,7 +21,7 @@ See [config.yml](./config.yml).
 ### Use
 
 ```bash
-terminalizer record demo
+terminalizer record demo -c config.yml
 ```
 
 ```bash
