@@ -47,29 +47,6 @@ Let's start
 
 ---
 
-<!-- _class: outline -->
-
-### Outline (Just for development of these slides)
-
-- File structure
-- What is Git?
-- Which problem does Git solve?
-  - FINAL.doc
-  - Motivation workflow
-- Actions on a file structure
-- What is it like to work with Git?
-- Where does Git store all the information?
-- Example: Change a file
-- Git stages
-- Remote
-- Sequential / Parallel?
-- Conflicts
-- Branching
-- How to ignore specific files?
-- Do you really use a terminal?
-
----
-
 ### Terminology: File structure
 
 <div class="columns2">

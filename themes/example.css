@@ -10,9 +10,9 @@ section {
   color: #135;
 }
 
-section.outline {
+/* section.outline {
   font-size: 15px;
-}
+} */
 
 .columnsflex {
   display: grid;
