@@ -718,21 +718,46 @@ nothing to commit, working tree clean
 
 ### Conflicts
 
+<br>
+
+- **Problem**
+  - Conflicting changes on a given file.
+- **Solution**
+  - Manually resolve the conflict: Define how the combination of both changes should look like.
+
+TODO: Add illustrating image
+
 ---
 
 ### Branches
+
+<br>
+
+- Develop different ideas on given features in parallel
+- Develop multiple features in parallel
+- Make a proposal
+- ...
+
+TODO: Add nice branch graph
+
+---
+
+### [Git Larlge File Storage (LFS)](https://git-lfs.com/)
+
+- Open source
+- Keep repos small
+- Work like you always do
+
+![bg right:60% 65%](assets/git_lfs.gif)
 
 ---
 
 ### Summary
 
-- Steps
-  - Work
-  - Stage
-  - Commit
-  - Pull
-  - Push
-- Applications
+<br>
+
+- Steps: Work, stage, commit, pull, push, repeat
+- Applications:
   - Code
   - Latex
   - Workflows
