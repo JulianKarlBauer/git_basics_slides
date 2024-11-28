@@ -78,7 +78,7 @@ Let's start
 
 <style scoped>
 pre {
-   font-size: 25px;
+   font-size: 22px;
 }
 </style>
 
@@ -313,8 +313,6 @@ We can ...
 
 ### How do we use Git?
 
-<br>
-
 Sequences of terminal **commands**
 or using a **graphical interface**, e.g., within VSCode.
 
@@ -362,6 +360,8 @@ git checkout
 
 ### Where does Git work?
 
+<br>
+
 <div class="columns2">
 <div style="flex: 10;">
 
@@ -374,13 +374,7 @@ git checkout
 ├── .gitignore
 ├── LICENSE
 ├── main.md
-├── marp.config.mjs
-├── netlify.toml
-├── node_modules
-├── package.json
-├── package-lock.json
-├── prettierignore
-├── public
+...
 ├── README.md
 ├── themes
 └── .vscode
@@ -399,13 +393,9 @@ git checkout
 ├── FETCH_HEAD
 ├── HEAD
 ├── hooks
-├── index
-├── info
-├── logs
+...
 ├── objects
-├── ORIG_HEAD
-├── packed-refs
-└── refs
+...
 ```
 
 </div>
