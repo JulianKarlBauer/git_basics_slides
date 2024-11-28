@@ -411,22 +411,11 @@ Only during command execution.
 
 ---
 
-### Example: Existing directory -> Git repository
+### Example: Existing directory
 
-<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns -->
 <br>
 
-<style scoped>
-.columns3 {
-  display: grid;
-  /* display: flex; */
-  grid-template-columns: 1fr 1fr 3fr;
-  gap: 1rem;
-  color: red;
-}
-</style>
-
-<div class="columns3">
+<div class="columns2">
 <div>
 
 Directory
@@ -443,7 +432,7 @@ Directory
 </div>
 <div>
 
-File
+File: `main.py`
 
 ```python
 # main.py
