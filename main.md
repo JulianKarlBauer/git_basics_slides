@@ -444,7 +444,15 @@ print(name)
 ```
 
 </div>
-<div>
+</div>
+
+<!-- ![](assets/ele.gif) -->
+
+---
+
+### Example: Existing directory -> Git repository
+
+<br>
 
 Initialization
 
@@ -464,10 +472,71 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-</div>
-</div>
-
 <!-- ![](assets/ele.gif) -->
+
+---
+
+### Example: Existing directory -> Git repository
+
+<br>
+
+Add existing files
+
+```properties
+➜  my_project git:(main) ✗ git add main.py
+➜  my_project git:(main) ✗ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   main.py
+
+```
+
+---
+
+### Example: Existing directory -> Git repository
+
+<br>
+
+```properties
+➜  my_project git:(main) ✗ git commit -m "Add original file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'xxxyour_user@xxxyour_pc_name.')
+```
+
+---
+
+### Example: Existing directory -> Git repository
+
+<br>
+
+```properties
+➜  my_project git:(main) ✗ git config user.email "julian@blub.com"
+➜  my_project git:(main) ✗ git config user.name "julian"
+
+➜  my_project git:(main) ✗ git commit -m "Add original file"
+[main (root-commit) 57dfa9d] Add original file
+ 1 file changed, 4 insertions(+)
+ create mode 100644 main.py
+
+➜  my_project git:(main) git status
+On branch main
+nothing to commit, working tree clean
+```
 
 ---
 
