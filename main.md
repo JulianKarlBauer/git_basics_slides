@@ -666,6 +666,28 @@ nothing to commit, working tree clean
 
 ### Git stages
 
+![bg right:73% 90%](./assets/stages_01.png)
+
+<sup>[image source][2]</sup>
+
+[2]: https://medium.com/@zjpjack/reverting-modified-in-4-stages-in-git-f3997f526902
+
+---
+
+### Git stages
+
+![bg right:73% 90%](./assets/stages_02.png)
+
+<sup>[image source][2]</sup>
+
+---
+
+### Git stages
+
+![bg right:73% 90%](./assets/stages_03.png)
+
+<sup>[image source][2]</sup>
+
 ---
 
 ### Remote
