@@ -725,7 +725,7 @@ TODO: Add nice branch graph
 - Keep repos small
 - Work like you always do
 
-![bg right:60% 65%](assets/git_lfs.gif)
+![bg right:60% 75%](assets/git_lfs.gif)
 
 ---
 
