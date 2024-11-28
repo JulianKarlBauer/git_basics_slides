@@ -692,6 +692,28 @@ nothing to commit, working tree clean
 
 ### Remote
 
+![bg right:73% 90%](./assets/remote_01.png)
+
+<sup>[image source][3]</sup>
+
+[3]: https://www.zentao.pm/share/git-sync-remote-repos-update-179.html
+
+---
+
+### Remote
+
+![bg right:73% 90%](./assets/remote_02.png)
+
+<sup>[image source][3]</sup>
+
+---
+
+### Remote
+
+![bg right:73% 90%](./assets/remote_03.png)
+
+<sup>[image source][3]</sup>
+
 ---
 
 ### Conflicts
