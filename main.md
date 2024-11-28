@@ -621,6 +621,23 @@ index 8db932b..bc0d6d9 100644
 <br>
 
 ```properties
+➜  my_project git:(main) git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+---
+
+### Example: Change file content
+
+<br>
+
+```properties
 ➜  my_project git:(main) ✗ git add main.py
 ➜  my_project git:(main) ✗ git status
 On branch main
