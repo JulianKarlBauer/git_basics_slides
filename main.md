@@ -540,7 +540,110 @@ nothing to commit, working tree clean
 
 ---
 
-### Example: Change a file (VSCode)
+### Example: Change a file
+
+<br>
+
+<div class="columns2">
+<div>
+
+Old
+
+```python
+# main.py
+
+name = "bill"
+
+print(name)
+
+```
+
+</div>
+<div>
+
+New
+
+```python
+# main.py
+
+name = "bob"
+
+print(name)
+
+```
+
+</div>
+</div>
+
+---
+
+### Example: Change file content
+
+<br>
+
+```properties
+➜  my_project git:(main) git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   main.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+---
+
+### Example: Change file content
+
+<br>
+
+```properties
+➜  my_project git:(main) ✗ git diff
+
+diff --git a/main.py b/main.py
+index 8db932b..bc0d6d9 100644
+--- a/main.py
++++ b/main.py
+@@ -1,4 +1,4 @@
+
+-name = "bill"
++name = "bob"
+
+ print(name)
+(END)
+```
+
+---
+
+### Example: Change file content
+
+<br>
+
+```properties
+➜  my_project git:(main) ✗ git add main.py
+➜  my_project git:(main) ✗ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   main.py
+
+➜  my_project git:(main) ✗ git commit -m "Bob is awesome, I should print his name"
+[main 92bf003] Bob is awesome, I should print his name
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
+
+---
+
+### Example: Change file content
+
+<br>
+
+```properties
+➜  my_project git:(main) git status
+On branch main
+nothing to commit, working tree clean
+```
 
 ---
 
