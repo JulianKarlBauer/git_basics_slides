@@ -733,6 +733,33 @@ Date:   Fri Nov 29 00:01:06 2024 +0100
 
 ---
 
+### Remote
+
+<style scoped>
+.temporaryDiv {
+   font-size: 22px;
+}
+</style>
+
+<div class="temporaryDiv">
+
+- [Protocols](https://git-scm.com/book/ms/v2/Git-on-the-Server-The-Protocols)
+  - HTTP
+  - SSH
+- [Github auth](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github)
+
+![width: 10cm](./assets/github_clone_button.png)
+
+</div>
+
+![bg right:73% 90%](./assets/remote_03.png)
+
+<sup>[image source][3]</sup>
+
+![alt text](image.png)
+
+---
+
 ### Conflicts
 
 <div class="columns3">
@@ -796,6 +823,8 @@ print(name)
 - the right change
 - a combination of both
 - something completely new.
+
+[**Merge Tools**](https://stackoverflow.com/questions/137102/whats-the-best-visual-merge-tool-for-git)
 
 <!-- Git has powerful algorithm to combine changes from multiple authors.
 However, sometimes people do conflicting changes, e.g., -->
