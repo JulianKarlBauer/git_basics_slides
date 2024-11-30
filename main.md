@@ -47,47 +47,10 @@ Let's start
 
 ---
 
-### Terminology: File structure
+```zig
 
-<div class="columns2">
-
-<div style="display: flex;">
-
-<style scoped>
-pre {
-   font-size: 22px;
-}
-</style>
-
-```bash
-$ tree
-
-.
-|
-├── file1.txt
-├── file2.txt
-├── dir1
-│   ├── dir2
-│   │   ├── file3.txt
-│   │   └── file4.txt
-│   └── file5.txt
-├── dir3
-│    ├── file6.txt
-│    ...
-│    └── file12.txt
-...
-
+pub fn RELU() !f64 {}
 ```
-
-</div>
-
-<!--
-Let's start with some terminology.
-During this talk, I will use the word file structure to refer to
-a bunch of files within potentially nested directories.
-
-So essentially it's a folder containing files on your filesystem.
--->
 
 ---
 
@@ -108,7 +71,8 @@ So essentially it's a folder containing files on your filesystem.
 
 <!--
 
-Let's go back to the main question:
+The major question of this talk is:
+
 What is Git?
 
 There are certainly a number of legitimate answers...
@@ -132,9 +96,87 @@ who want to dig deeper into the machinery.
 I can't tell you much about it, read it once, forgot it long time ago,
 because it is not really essential for a user of Git.
 
-So, let us focus on Git being a version control system for now.
-What does that mean?
+So, let us focus on Git being a version control system
+and the command line interface which allows us to use it.
 
+What does version control system mean?
+
+-->
+
+---
+
+### What is version control?
+
+<br>
+
+**Tracking changes** to a **file structure** including **metadata** on
+
+- Who: Author
+- When: Timestamp
+- Why: Elaboration in commit message
+
+changed something. This **enables structured collaboration** among team members.
+
+<!--
+Version control is build to
+...
+
+Using version control, you get the
+- What (the changes)
+- Who (Author) and
+- When (Timestamp)
+for free and automated.
+
+This helps you to focus on the Why,
+which commonly is ecnoded in terms of a Git commit message.
+This is a free text piece of metadata you can post on every change.
+
+So we can track changes to a file structure.
+What kind of changes are there?
+-->
+
+---
+
+### File structure
+
+<br>
+
+<div class="columns2">
+
+<div style="display: flex;">
+
+<style scoped>
+pre {
+   font-size: 22px;
+}
+</style>
+
+```bash
+$ tree
+.
+|
+├── file1.txt
+├── file2.txt
+├── dir1
+│   ├── dir2
+│   │   ├── file3.txt
+│   │   └── file4.txt
+│   └── file5.txt
+├── dir3
+│    ├── file6.txt
+│    ...
+│    └── file12.txt
+...
+```
+
+</div>
+
+<!--
+Let's start with some terminology.
+During this talk, I will use the word file structure to refer to
+a bunch of files within potentially nested directories.
+
+So essentially it's a folder containing files on your filesystem.
 -->
 
 ---
@@ -239,38 +281,6 @@ But that's a more advanced topic...
 
 ---
 
-### Which problem does version control solve?
-
-<br>
-
-**Track changes** to a **file structure** including **metadata** on
-
-- Who: Author
-- When: Timestamp
-- Why: Elaboration in commit message
-
-and **enable structured collaboration** among team members.
-
-<!--
-Version control is build to
-...
-
-Using version control, you get the
-- What (the changes)
-- Who (Author) and
-- When (Timestamp)
-for free and automated.
-
-This helps you to focus on the Why,
-which commonly is ecnoded in terms of a Git commit message.
-This is a free text piece of metadata you can post on every change.
-
-So we can track changes to a file structure.
-What kind of changes are there?
--->
-
----
-
 ### Which types of changes to a file structure are possible?
 
 <br>
@@ -335,7 +345,7 @@ git checkout
 
 ---
 
-### Where does Git work?
+### Where does Git work? (`.git`)
 
 <br>
 
