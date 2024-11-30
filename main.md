@@ -423,8 +423,6 @@ print(name)
 </div>
 </div>
 
-<!-- ![](assets/ele.gif) -->
-
 ---
 
 ### Example: Project Directory -> Git Repository (Init, Status)
@@ -448,8 +446,6 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-
-<!-- ![](assets/ele.gif) -->
 
 ---
 
