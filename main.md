@@ -797,8 +797,6 @@ print(name)
 - a combination of both
 - something completely new.
 
-TODO: Add illustrating image
-
 <!-- Git has powerful algorithm to combine changes from multiple authors.
 However, sometimes people do conflicting changes, e.g., -->
 
@@ -808,12 +806,33 @@ However, sometimes people do conflicting changes, e.g., -->
 
 <br>
 
-- Develop different ideas on given features in parallel
-- Develop multiple features in parallel
-- Make a proposal
-- ...
+<!-- prettier-ignore-start -->
 
-TODO: Add nice branch graph
+
+* Develop multiple features
+* Develop different variantes
+* **Make a proposal**
+
+
+<!-- prettier-ignore-end -->
+
+<sup>[image source][5]</sup>
+
+[5]: https://stackoverflow.com/a/63253135/8935243
+
+![bg right:40% 70%](./assets/branches.png)
+
+---
+
+### Log "A Dog"
+
+<br>
+
+![bg right:60% 50%](./assets/adog.png)
+
+<sup>[image source][4]</sup>
+
+[4]: https://stackoverflow.com/a/35075021/8935243
 
 ---
 
@@ -852,18 +871,6 @@ TODO: Add nice branch graph
 
 ---
 
-### Log "A Dog"
-
-<br>
-
-![bg right:60% 50%](./assets/adog.png)
-
-<sup>[image source][4]</sup>
-
-[4]: https://stackoverflow.com/a/35075021/8935243
-
----
-
 ### [Git Large File Storage (LFS)](https://git-lfs.com/)
 
 - Keep repos small
@@ -887,12 +894,17 @@ TODO: Add nice branch graph
 
 ### Outlook
 
-- Git within your editor / integrated development environment (IDE)
+- Git within your integrated development environment (IDE)
 - Hooks, e.g., `pre-commit`
 - Global config (e.g., `.venv`, `.DS_Store`, ...)
-- Github
-- Continuos integration (CI) with Github Actions
+- Github / Gitlab
+- Continuos integration (CI) with Github Actions / Gitlab CI/CD
 - Git large file storage (LFS) at your university
+- [Git workflows][git_workflows_atlassian]: Centralized, feature branching, gitflow workflows, forking workflow
+
+[git_workflows_atlassian]: https://www.atlassian.com/git/tutorials/comparing-workflows
+
+---
 
 ### Resources
 
