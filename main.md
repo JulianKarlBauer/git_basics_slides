@@ -890,6 +890,49 @@ However, sometimes people do conflicting changes, e.g., -->
 
 ---
 
+### Git Config and global `.gitignore`
+
+<div class="columns2">
+
+<div>
+
+<style scoped>
+pre {
+   font-size: 22px;
+}
+</style>
+
+[Show config](https://stackoverflow.com/a/12254105/8935243)
+
+```
+git config --list --show-origin
+
+file:/home/julian/.gitconfig    init.defaultbranch=main
+file:/home/julian/.gitconfig    core.editor=vim
+file:/home/julian/.gitconfig    core.excludesfile=~/.gitignore
+file:.git/config        core.repositoryformatversion=0
+file:.git/config        core.filemode=true
+file:.git/config        core.bare=false
+file:.git/config        core.logallrefupdates=true
+file:.git/config        user.name=julian
+file:.git/config        user.email=julian@blub.com
+(END)
+```
+
+</div>
+
+<div>
+
+- Global `.gitignore`, e.g., for `.venv`, `.DS_Store`
+  - Create file `touch ~/.gitignore`
+  - Configure `git config --global core.excludesFile '~/.gitignore'`
+  - Lookup `git config --get core.excludesfile`
+
+</div>
+</div>
+
+---
+
 ### [Git Large File Storage (LFS)](https://git-lfs.com/)
 
 - Keep repos small
@@ -913,9 +956,8 @@ However, sometimes people do conflicting changes, e.g., -->
 
 ### Outlook
 
-- Git within your integrated development environment (IDE)
+- Git in your integrated development environment (IDE)
 - Hooks, e.g., `pre-commit`
-- Global config (e.g., `.venv`, `.DS_Store`, ...)
 - Github / Gitlab
 - Continuos integration (CI) with Github Actions / Gitlab CI/CD
 - Git large file storage (LFS) at your university
