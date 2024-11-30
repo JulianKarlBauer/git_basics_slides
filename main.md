@@ -47,13 +47,6 @@ Let's start
 
 ---
 
-```zig
-
-pub fn RELU() !f64 {}
-```
-
----
-
 ### What is Git?
 
 <br>
