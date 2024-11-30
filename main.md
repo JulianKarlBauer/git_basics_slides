@@ -892,15 +892,17 @@ However, sometimes people do conflicting changes, e.g., -->
 
 ### Git Config and global `.gitignore`
 
+<style scoped>
+pre {
+   font-size: 26px;
+}
+</style>
+
+<br>
+
 <div class="columns2">
 
 <div>
-
-<style scoped>
-pre {
-   font-size: 22px;
-}
-</style>
 
 [Show config](https://stackoverflow.com/a/12254105/8935243)
 
@@ -923,10 +925,21 @@ file:.git/config        user.email=julian@blub.com
 
 <div>
 
-- Global `.gitignore`, e.g., for `.venv`, `.DS_Store`
-  - Create file `touch ~/.gitignore`
-  - Configure `git config --global core.excludesFile '~/.gitignore'`
-  - Lookup `git config --get core.excludesfile`
+[Global `.gitignore`](https://stackoverflow.com/questions/7335420/global-git-ignore)
+(e.g. `.venv`, `.DS_Store`, ...)
+
+<!-- - Create file `touch ~/.gitignore`
+- Configure `git config --global core.excludesFile '~/.gitignore'`
+- Lookup `git config --get core.excludesfile` -->
+
+```
+➜  touch ~/.gitignore
+
+➜  git config --global core.excludesFile '~/.gitignore'
+
+➜  git config --get core.excludesfile
+~/.gitignore
+```
 
 </div>
 </div>
