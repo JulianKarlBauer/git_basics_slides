@@ -733,7 +733,7 @@ Date:   Fri Nov 29 00:01:06 2024 +0100
 
 ---
 
-### Remote
+### [Protocols](https://git-scm.com/book/ms/v2/Git-on-the-Server-The-Protocols)
 
 <style scoped>
 .temporaryDiv {
@@ -743,20 +743,14 @@ Date:   Fri Nov 29 00:01:06 2024 +0100
 
 <div class="temporaryDiv">
 
-- [Protocols](https://git-scm.com/book/ms/v2/Git-on-the-Server-The-Protocols)
-  - HTTP
-  - SSH
-- [Github auth](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github)
+- HTTP
+- SSH
 
-![width: 10cm](./assets/github_clone_button.png)
+[See also Github authentication](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github)
 
 </div>
 
-![bg right:73% 90%](./assets/remote_03.png)
-
-<sup>[image source][3]</sup>
-
-![alt text](image.png)
+![bg right:70% 80%](./assets/github_clone_screen.png)
 
 ---
 
