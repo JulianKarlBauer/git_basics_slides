@@ -388,7 +388,7 @@ Only during command execution.
 
 ---
 
-### Example: Existing directory
+### Example: Project Directory
 
 <br>
 
@@ -427,7 +427,7 @@ print(name)
 
 ---
 
-### Example: Existing directory -> Git repository
+### Example: Project Directory -> Git Repository (Init, Status)
 
 <br>
 
@@ -453,7 +453,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ---
 
-### Example: Existing directory -> Git repository
+### Example: Project Directory -> Git Repository (Add)
 
 <br>
 
@@ -474,7 +474,7 @@ Changes to be committed:
 
 ---
 
-### Example: Existing directory -> Git repository
+### Example: Project Directory -> Git Repository (Commit)
 
 <br>
 
@@ -497,7 +497,7 @@ fatal: unable to auto-detect email address (got 'xxxyour_user@xxxyour_pc_name.')
 
 ---
 
-### Example: Existing directory -> Git repository
+### Example: Project Directory -> Git Repository (Config)
 
 <br>
 
@@ -513,6 +513,23 @@ fatal: unable to auto-detect email address (got 'xxxyour_user@xxxyour_pc_name.')
 ➜  my_project git:(main) git status
 On branch main
 nothing to commit, working tree clean
+```
+
+---
+
+### Example: Project Directory -> Git Repository (Log)
+
+<br>
+
+```properties
+➜  my_project git:(main) git log
+
+commit 57dfa9df1284479fb6c5d5c8d502edfd763d9179
+Author: julian <julian@blub.com>
+Date:   Fri Nov 29 00:01:06 2024 +0100
+
+    Add original file
+(END)
 ```
 
 ---
@@ -554,7 +571,7 @@ print(name)
 
 ---
 
-### Example: Change file content
+### Example: Change file content (Status)
 
 <br>
 
@@ -571,7 +588,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 ---
 
-### Example: Change file content
+### Example: Change file content (Diff)
 
 <br>
 
@@ -593,7 +610,7 @@ index 8db932b..bc0d6d9 100644
 
 ---
 
-### Example: Change file content
+### Example: Change file content (Status)
 
 <br>
 
@@ -610,7 +627,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 ---
 
-### Example: Change file content
+### Example: Change file content (Add)
 
 <br>
 
@@ -621,22 +638,45 @@ On branch main
 Changes to be committed:
   (use "git restore --staged <file>..." to unstage)
         modified:   main.py
-
-➜  my_project git:(main) ✗ git commit -m "Bob is awesome, I should print his name"
-[main 92bf003] Bob is awesome, I should print his name
- 1 file changed, 1 insertion(+), 1 deletion(-)
 ```
 
 ---
 
-### Example: Change file content
+### Example: Change file content (Commit, Status)
 
 <br>
 
 ```properties
+➜  my_project git:(main) ✗ git commit -m "Bob is awesome, I should print his name"
+[main 92bf003] Bob is awesome, I should print his name
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
 ➜  my_project git:(main) git status
 On branch main
 nothing to commit, working tree clean
+```
+
+---
+
+### Example: Change file content (Log)
+
+<br>
+
+```properties
+➜  my_project git:(main) git log
+
+commit 92bf003ee8165c2c72f235d6eb54d3883af19775 (HEAD -> main)
+Author: julian <julian@blub.com>
+Date:   Fri Nov 29 00:13:19 2024 +0100
+
+    Bob is awesome, I should print his name
+
+commit 57dfa9df1284479fb6c5d5c8d502edfd763d9179
+Author: julian <julian@blub.com>
+Date:   Fri Nov 29 00:01:06 2024 +0100
+
+    Add original file
+(END)
 ```
 
 ---
@@ -695,14 +735,72 @@ nothing to commit, working tree clean
 
 ### Conflicts
 
-<br>
+<div class="columns3">
 
-- **Problem**
-  - Conflicting changes on a given file.
-- **Solution**
-  - Manually resolve the conflict: Define how the combination of both changes should look like.
+<style scoped>
+section {
+   font-size: 24px;
+}
+pre {
+   font-size: 20px;
+}
+</style>
+
+<div>
+
+Left
+
+```python
+# main.py
+
+name = "Lui"
+
+print(name)
+
+```
+
+</div>
+<div>
+
+Old
+
+```python
+# main.py
+
+name = "bill"
+
+print(name)
+
+```
+
+</div>
+<div>
+
+Right
+
+```python
+# main.py
+
+name = "Randell"
+
+print(name)
+
+```
+
+</div>
+</div>
+
+**Manually resolve the conflict**: Tell Git whether to use
+
+- the left change
+- the right change
+- a combination of both
+- something completely new.
 
 TODO: Add illustrating image
+
+<!-- Git has powerful algorithm to combine changes from multiple authors.
+However, sometimes people do conflicting changes, e.g., -->
 
 ---
 
@@ -719,9 +817,55 @@ TODO: Add nice branch graph
 
 ---
 
-### [Git Larlge File Storage (LFS)](https://git-lfs.com/)
+### Customized Log
 
-- Open source
+<br>
+
+```properties
+➜  project git:(branch) git log --all --decorate --oneline --graph
+
+| * 1554055 (origin/feedback_on_using_postprocessor, feedback_on_using_postprocessor) Tune comments and remove obvious explanatory ones
+| * e5fdce1 Update project/postprocessors.py
+| * 119036c Fix test after changes to signature
+| * 7b6291f Playing with the postprocessor
+|/
+*   8a4c3d5 (main) Merge pull request #85 from project/postprocessing
+|\
+| * 2d48c0d fix index
+| * 58c57e7 include hamiltonian to test
+| * b30bba3 no need to use tikzexport by plotly, use csv directly and tweak in .tex
+| *   ba3199d Merge pull request #84 from project/main
+| |\
+| |/
+|/|
+* | 84fbb66 correct reference results after bugfix
+* | f5b32ea small bug fix
+* | e45a266 small bug fixes and residual clean ups
+* |   b6275ac Merge pull request #82 from project/discrete_gradient_methods
+|\ \
+| * | 7884cad abbreviate
+| * | a8479a7 avoid overwriting reference solutions
+| * | 9bd7ddf refactor DG part II
+| * | ab42fb2 refactor discrete gradient
+| * | 2210f40 refactor postprocessing
+```
+
+---
+
+### Log "A Dog"
+
+<br>
+
+![bg right:60% 50%](./assets/adog.png)
+
+<sup>[image source][4]</sup>
+
+[4]: https://stackoverflow.com/a/35075021/8935243
+
+---
+
+### [Git Large File Storage (LFS)](https://git-lfs.com/)
+
 - Keep repos small
 - Work like you always do
 
@@ -733,20 +877,25 @@ TODO: Add nice branch graph
 
 <br>
 
-- Steps: Work, stage, commit, pull, push, repeat
+- The Git way of working: Change, add, commit, pull, push, repeat
 - Applications:
   - Code
   - Latex
-  - Workflows
+  - Any computational project
 
 ---
 
 ### Outlook
 
-- Github
-- Github Actions
-- Git large file storage (LFS)
+- Git within your editor / integrated development environment (IDE)
 - Hooks, e.g., `pre-commit`
 - Global config (e.g., `.venv`, `.DS_Store`, ...)
+- Github
+- Continuos integration (CI) with Github Actions
+- Git large file storage (LFS) at your university
 
-<!-- ![bg opacity](./assets/gradient.jpg) -->
+### Resources
+
+- [Software Carpentry: Git-Novice](https://swcarpentry.github.io/git-novice/)
+- [Git for beginners: The definitive practical guide](https://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide)
+- [The Git docs](https://git-scm.com/doc)
