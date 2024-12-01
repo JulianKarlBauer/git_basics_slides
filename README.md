@@ -2,6 +2,8 @@
 
 Slide Deck on Git Basics.
 
+Please find the slides in [`main.html`](./main.html) and use Chrome.
+
 ## Tool
 
 We use the (node-based)
