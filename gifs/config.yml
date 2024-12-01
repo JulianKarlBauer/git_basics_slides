@@ -85,7 +85,7 @@ letterSpacing: 0
 # Theme
 theme:
   background: "transparent"
-  foreground: "#afafaf"
+  foreground: "#f7f7f7"
   cursor: "#c7c7c7"
   black: "#232628"
   red: "#fc4384"
@@ -94,7 +94,7 @@ theme:
   blue: "#75dff2"
   magenta: "#ae89fe"
   cyan: "#708387"
-  white: "#d5d5d0"
+  white: "#f7f7f7"
   brightBlack: "#626566"
   brightRed: "#ff7fac"
   brightGreen: "#c8ed71"
@@ -102,4 +102,4 @@ theme:
   brightBlue: "#75dff2"
   brightMagenta: "#ae89fe"
   brightCyan: "#b1c6ca"
-  brightWhite: "#f9f9f4"
+  brightWhite: "#FFFFFF"
