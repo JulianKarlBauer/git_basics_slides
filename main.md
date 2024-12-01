@@ -440,8 +440,6 @@ print(name)
 
 <br>
 
-Add existing files
-
 ![alt text](assets/example_init_dir_02.gif)
 
 ---
