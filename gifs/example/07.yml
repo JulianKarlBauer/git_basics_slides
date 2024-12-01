@@ -1,0 +1,134 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: zsh
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/julian/git/git_basics_slides/gifs/example/my_project
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 83
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 16
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: -1
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: null
+    title: null
+    style:
+      backgroundColor: "#300a24"
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#f7f7f7"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#f7f7f7"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#FFFFFF"
+# Records, feel free to edit them
+records:
+  - delay: 5
+    content: "\e]7;file://bertoldi/home/julian/git/git_basics_slides/gifs/example/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[K\e[?1h\e=\e[?2004h"
+  - delay: 11
+    content: "\r\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e[K"
+  - delay: 181
+    content: g
+  - delay: 163
+    content: "\bgi"
+  - delay: 72
+    content: t
+  - delay: 144
+    content: ' '
+  - delay: 424
+    content: d
+  - delay: 136
+    content: i
+  - delay: 103
+    content: f
+  - delay: 152
+    content: f
+  - delay: 1000
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;git diff\a\e]1;git\a"
+  - delay: 12
+    content: "\e[?1049h\e[22;0;0t\e[?1h\e=\r\e[1mdiff --git a/main.py b/main.py\e[m\e[m\r\n\e[1mindex 8db932b..bc0d6d9 100644\e[m\e[m\r\n\e[1m--- a/main.py\e[m\e[m\r\n\e[1m+++ b/main.py\e[m\e[m\r\n\e[36m@@ -1,4 +1,4 @@\e[m\e[m\r\n \e[m\e[m\r\n\e[31m-name = \"bill\"\e[m\e[m\r\n\e[32m+\e[m\e[32mname = \"bob\"\e[m\e[m\r\n \e[m\e[m\r\n print(name)\e[m\e[m\r\n\e[7m(END)\e[27m\e[K"
