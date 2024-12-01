@@ -432,23 +432,7 @@ print(name)
 
 <br>
 
-Initialization
-
-```properties
-➜  my_project git init
-Initialized empty Git repository in my_project/.git/
-
-➜  my_project git:(main) ✗ git status
-On branch main
-
-No commits yet
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        main.py
-
-nothing added to commit but untracked files present (use "git add" to track)
-```
+![alt text](assets/example_init_dir_01.gif)
 
 ---
 
@@ -456,20 +440,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 <br>
 
-Add existing files
-
-```properties
-➜  my_project git:(main) ✗ git add main.py
-➜  my_project git:(main) ✗ git status
-On branch main
-
-No commits yet
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   main.py
-
-```
+![alt text](assets/example_init_dir_02.gif)
 
 ---
 
@@ -477,22 +448,7 @@ Changes to be committed:
 
 <br>
 
-```properties
-➜  my_project git:(main) ✗ git commit -m "Add original file"
-Author identity unknown
-
-*** Please tell me who you are.
-
-Run
-
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-
-to set your account's default identity.
-Omit --global to set the identity only in this repository.
-
-fatal: unable to auto-detect email address (got 'xxxyour_user@xxxyour_pc_name.')
-```
+![alt text](assets/example_init_dir_03.gif)
 
 ---
 
@@ -500,19 +456,7 @@ fatal: unable to auto-detect email address (got 'xxxyour_user@xxxyour_pc_name.')
 
 <br>
 
-```properties
-➜  my_project git:(main) ✗ git config user.email "julian@blub.com"
-➜  my_project git:(main) ✗ git config user.name "julian"
-
-➜  my_project git:(main) ✗ git commit -m "Add original file"
-[main (root-commit) 57dfa9d] Add original file
- 1 file changed, 4 insertions(+)
- create mode 100644 main.py
-
-➜  my_project git:(main) git status
-On branch main
-nothing to commit, working tree clean
-```
+![alt text](assets/example_init_dir_04.gif)
 
 ---
 
@@ -520,16 +464,7 @@ nothing to commit, working tree clean
 
 <br>
 
-```properties
-➜  my_project git:(main) git log
-
-commit 57dfa9df1284479fb6c5d5c8d502edfd763d9179
-Author: julian <julian@blub.com>
-Date:   Fri Nov 29 00:01:06 2024 +0100
-
-    Add original file
-(END)
-```
+![alt text](assets/example_init_dir_05.gif)
 
 ---
 
@@ -574,16 +509,7 @@ print(name)
 
 <br>
 
-```properties
-➜  my_project git:(main) git status
-On branch main
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   main.py
-
-no changes added to commit (use "git add" and/or "git commit -a")
-```
+![alt text](assets/example_06.gif)
 
 ---
 
@@ -591,21 +517,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 <br>
 
-```properties
-➜  my_project git:(main) ✗ git diff
-
-diff --git a/main.py b/main.py
-index 8db932b..bc0d6d9 100644
---- a/main.py
-+++ b/main.py
-@@ -1,4 +1,4 @@
-
--name = "bill"
-+name = "bob"
-
- print(name)
-(END)
-```
+![alt text](assets/example_07.gif)
 
 ---
 
@@ -613,16 +525,7 @@ index 8db932b..bc0d6d9 100644
 
 <br>
 
-```properties
-➜  my_project git:(main) git status
-On branch main
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   main.py
-
-no changes added to commit (use "git add" and/or "git commit -a")
-```
+![alt text](assets/example_06.gif)
 
 ---
 
@@ -630,14 +533,7 @@ no changes added to commit (use "git add" and/or "git commit -a")
 
 <br>
 
-```properties
-➜  my_project git:(main) ✗ git add main.py
-➜  my_project git:(main) ✗ git status
-On branch main
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        modified:   main.py
-```
+![alt text](assets/example_08.gif)
 
 ---
 
@@ -645,15 +541,7 @@ Changes to be committed:
 
 <br>
 
-```properties
-➜  my_project git:(main) ✗ git commit -m "Bob is awesome, I should print his name"
-[main 92bf003] Bob is awesome, I should print his name
- 1 file changed, 1 insertion(+), 1 deletion(-)
-
-➜  my_project git:(main) git status
-On branch main
-nothing to commit, working tree clean
-```
+![alt text](assets/example_09.gif)
 
 ---
 
@@ -661,22 +549,7 @@ nothing to commit, working tree clean
 
 <br>
 
-```properties
-➜  my_project git:(main) git log
-
-commit 92bf003ee8165c2c72f235d6eb54d3883af19775 (HEAD -> main)
-Author: julian <julian@blub.com>
-Date:   Fri Nov 29 00:13:19 2024 +0100
-
-    Bob is awesome, I should print his name
-
-commit 57dfa9df1284479fb6c5d5c8d502edfd763d9179
-Author: julian <julian@blub.com>
-Date:   Fri Nov 29 00:01:06 2024 +0100
-
-    Add original file
-(END)
-```
+![alt text](assets/example_10.gif)
 
 ---
 
@@ -864,32 +737,9 @@ However, sometimes people do conflicting changes, e.g., -->
 
 ```properties
 ➜  project git:(branch) git log --all --decorate --oneline --graph
-
-| * 1554055 (origin/feedback_on_using_postprocessor, feedback_on_using_postprocessor) Tune comments and remove obvious explanatory ones
-| * e5fdce1 Update project/postprocessors.py
-| * 119036c Fix test after changes to signature
-| * 7b6291f Playing with the postprocessor
-|/
-*   8a4c3d5 (main) Merge pull request #85 from project/postprocessing
-|\
-| * 2d48c0d fix index
-| * 58c57e7 include hamiltonian to test
-| * b30bba3 no need to use tikzexport by plotly, use csv directly and tweak in .tex
-| *   ba3199d Merge pull request #84 from project/main
-| |\
-| |/
-|/|
-* | 84fbb66 correct reference results after bugfix
-* | f5b32ea small bug fix
-* | e45a266 small bug fixes and residual clean ups
-* |   b6275ac Merge pull request #82 from project/discrete_gradient_methods
-|\ \
-| * | 7884cad abbreviate
-| * | a8479a7 avoid overwriting reference solutions
-| * | 9bd7ddf refactor DG part II
-| * | ab42fb2 refactor discrete gradient
-| * | 2210f40 refactor postprocessing
 ```
+
+![adog](./assets/adog.gif)
 
 ---
 

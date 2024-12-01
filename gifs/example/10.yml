@@ -1,0 +1,130 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: zsh
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/julian/git/git_basics_slides/gifs/example/my_project
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 83
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 16
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: -1
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: null
+    title: null
+    style:
+      backgroundColor: "#300a24"
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#f7f7f7"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#f7f7f7"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#FFFFFF"
+# Records, feel free to edit them
+records:
+  - delay: 15
+    content: "\r\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m)\e[00m \e[K"
+  - delay: 482
+    content: g
+  - delay: 127
+    content: "\bgi"
+  - delay: 71
+    content: t
+  - delay: 96
+    content: ' '
+  - delay: 168
+    content: l
+  - delay: 157
+    content: o
+  - delay: 75
+    content: g
+  - delay: 500
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;git log\a\e]1;git\a\e[?1049h\e[22;0;0t\e[?1h\e=\r\e[33mcommit 997d30a8f47b048fb91e167fbd0255d1f93bdac7\e[m\e[33m (\e[m\e[1;36mHEAD -> \e[m\e[1;32mmain\e[m\e[33m)\e[m\e[m\r\nAuthor: julian <julian@blub.com>\e[m\r\nDate:   Sun Dec 1 21:53:42 2024 +0100\e[m\r\n\e[m\r\n    Bob is awesome, I should print his name\e[m\r\n\e[m\r\n\e[33mcommit 0166b9f29e620a03459059e6c88f9d9694b28f16\e[m\e[m\r\nAuthor: julian <julian@blub.com>\e[m\r\nDate:   Sun Dec 1 20:32:33 2024 +0100\e[m\r\n\e[m\r\n    Add original file\e[m\r\n\e[7m(END)\e[27m\e[K"
+  - delay: 1550
+    content: "\r\e[K\a\r\e[K\e[7m(END)\e[27m\e[K"
