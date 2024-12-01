@@ -25,6 +25,10 @@ terminalizer record demo -c config.yml
 ```
 
 ```bash
+terminalizer record ../02 -c ../../config.yml
+```
+
+```bash
 terminalizer play demo
 ```
 
