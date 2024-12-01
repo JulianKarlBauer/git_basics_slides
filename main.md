@@ -737,32 +737,9 @@ However, sometimes people do conflicting changes, e.g., -->
 
 ```properties
 ➜  project git:(branch) git log --all --decorate --oneline --graph
-
-| * 1554055 (origin/feedback_on_using_postprocessor, feedback_on_using_postprocessor) Tune comments and remove obvious explanatory ones
-| * e5fdce1 Update project/postprocessors.py
-| * 119036c Fix test after changes to signature
-| * 7b6291f Playing with the postprocessor
-|/
-*   8a4c3d5 (main) Merge pull request #85 from project/postprocessing
-|\
-| * 2d48c0d fix index
-| * 58c57e7 include hamiltonian to test
-| * b30bba3 no need to use tikzexport by plotly, use csv directly and tweak in .tex
-| *   ba3199d Merge pull request #84 from project/main
-| |\
-| |/
-|/|
-* | 84fbb66 correct reference results after bugfix
-* | f5b32ea small bug fix
-* | e45a266 small bug fixes and residual clean ups
-* |   b6275ac Merge pull request #82 from project/discrete_gradient_methods
-|\ \
-| * | 7884cad abbreviate
-| * | a8479a7 avoid overwriting reference solutions
-| * | 9bd7ddf refactor DG part II
-| * | ab42fb2 refactor discrete gradient
-| * | 2210f40 refactor postprocessing
 ```
+
+![adog](./assets/adog.gif)
 
 ---
 

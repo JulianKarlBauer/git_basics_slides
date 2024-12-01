@@ -1,0 +1,136 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: zsh
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/julian/git/project
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 83
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 15
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: -1
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: null
+    title: null
+    style:
+      backgroundColor: "#300a24"
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#f7f7f7"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#f7f7f7"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#FFFFFF"
+# Records, feel free to edit them
+records:
+  - delay: 16
+    content: "\r\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mproject\e[00m \e[01;34mgit:(\e[31mmain\e[34m)\e[00m \e[K"
+  - delay: 900
+    content: g
+  - delay: 101
+    content: "\bgi"
+  - delay: 104
+    content: t
+  - delay: 127
+    content: ' '
+  - delay: 417
+    content: l
+  - delay: 160
+    content: o
+  - delay: 378
+    content: g --all --decorate --oneline --graph
+  - delay: 1109
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;git log --all --decorate --oneline --graph\a\e]1;git\a"
+  - delay: 36
+    content: "\e[?1049h\e[22;0;0t\e[?1h\e=\r"
+  - delay: 19
+    content: "* \e[33m9d9e88c\e[m\e[33m (\e[m\e[1;31morigin/weekly_test_pub_restructure\e[m\e[33m)\e[m link in Readme\e[m\r\n* \e[33m38dc973\e[m shift publications to test folder\e[m\r\n\e[31m|\e[m * \e[33m6c575eb\e[m\e[33m (\e[m\e[1;31morigin/postprocessing_refactor\e[m\e[33m)\e[m we love the factory pattern\e[m\r\n\e[31m|\e[m * \e[33m94705e4\e[m handle invalid evaluation points at once\e[m\r\n\e[31m|\e[m * \e[33m9f7381d\e[m make evaluation strategies available from outside the method\e[m\r\n\e[31m|\e[m * \e[33m76be102\e[m refactore `postprocess` method by using dictionary and similar interfac\e[m \b\e[31m\e[m\e[33m\e[me\e[m\r\n\e[31m|\e[m * \e[33mc9e557a\e[m align comment with content\e[m\r\n\e[31m|\e[m * \e[33m5ccd6c3\e[m switching to plotly\e[m\r\n\e[31m|\e[m * \e[33mb967e12\e[m more descriptive name\e[m\r\n\e[31m|\e[m * \e[33mb2ff569\e[m column includes all cases now\e[m\r\n\e[31m|\e[m * \e[33mf5ee654\e[m state results as property function, use manager more wisely\e[m\r\n\e[31m|\e[m * \e[33m9579451\e[m remove redundant df\e[m\r\n\e[31m|\e[m\e[31m/\e[m  \e[m\r\n*   \e[33mf7cfb37\e[m\e[33m (\e[m\e[1;31morigin/postprocessing_advanced\e[m\e[33m)\e[m Merge pull request #93 from project/di\e[m \b:\e[K"
+  - delay: 2398
+    content: "\r\e[K \e[KESC\b\b\bESC\e[K[\b[\e[K6\b6\e[K~\b~\r\e[K\e[33m\e[m\e[33m\e[m\e[1;31m\e[m\e[33m\e[mscrete_gradients\e[m\r\n\e[33m|\e[m\e[34m\\\e[m  \e[m\r\n\e[33m|\e[m * \e[33m142a925\e[m Update project/discrete_gradients.py\e[m\r\n\e[33m|\e[m * \e[33m443559b\e[m Update project/discrete_gradients.py\e[m\r\n\e[33m|\e[m * \e[33m8d81ebf\e[m fix flag\e[m\r\n\e[33m|\e[m * \e[33m6a3a869\e[m implement DGs with factory pattern\e[m\r\n\e[33m|\e[m * \e[33m870c38b\e[m abstract discrete gradient\e[m\r\n\e[33m|\e[m * \e[33m56f24b0\e[m remove unused abc\e[m\r\n\e[33m|\e[m * \e[33m85212b3\e[m shift squeeze and reduce number of \"return\" statements\e[m\r\n\e[33m|\e[m * \e[33mf4f6c61\e[m refactor using if else and one nonbinary flag\e[m\r\n\e[33m|\e[m\e[33m/\e[m  \e[m\r\n*   \e[33m37bc86c\e[m Merge pull request #92 from project/weekly-tests\e[m\r\n\e[35m|\e[m\e[36m\\\e[m  \e[m\r\n\e[35m|\e[m * \e[33m58239de\e[m name\e[m\r\n\e[35m|\e[m * \e[33mdeb983e\e[m renaming\e[m\r\n:\e[K"
+  - delay: 1343
+    content: "\r\e[K \e[KESC\b\b\bESC\e[K[\b[\e[K6\b6\e[K~\b~\r\e[K\e[31m|\e[m * \e[33mb30bba3\e[m no need to use tikzexport by plotly, use csv directly and tweak in .tex\e[m\r\n\e[31m|\e[m *   \e[33mba3199d\e[m Merge pull request #84 from project/main\e[m\r\n\e[31m|\e[m \e[33m|\e[m\e[31m\\\e[m  \e[m\r\n\e[31m|\e[m \e[33m|\e[m\e[31m/\e[m  \e[m\r\n\e[31m|\e[m\e[31m/\e[m\e[33m|\e[m   \e[m\r\n* \e[33m|\e[m \e[33m84fbb66\e[m correct reference results after bugfix\e[m\r\n* \e[33m|\e[m \e[33mf5b32ea\e[m small bug fix\e[m\r\n* \e[33m|\e[m \e[33me45a266\e[m small bug fixes and residual clean ups\e[m\r\n* \e[33m|\e[m   \e[33mb6275ac\e[m Merge pull request #82 from project/discrete_gradient_methods\e[m\r\n\e[35m|\e[m\e[36m\\\e[m \e[33m\\\e[m  \e[m\r\n\e[35m|\e[m * \e[33m|\e[m \e[33m7884cad\e[m abbreviate\e[m\r\n\e[35m|\e[m * \e[33m|\e[m \e[33ma8479a7\e[m avoid overwriting reference solutions\e[m\r\n\e[35m|\e[m * \e[33m|\e[m \e[33m9bd7ddf\e[m refactor DG part II\e[m\r\n\e[35m|\e[m * \e[33m|\e[m \e[33mab42fb2\e[m refactor discrete gradient\e[m\r\n\e[35m|\e[m * \e[33m|\e[m \e[33m2210f40\e[m refactor postprocessing\e[m\r\n:\e[K"
