@@ -838,3 +838,7 @@ file:.git/config        user.email=julian@blub.com
 - [Software Carpentry: Git-Novice](https://swcarpentry.github.io/git-novice/)
 - [Git for beginners: The definitive practical guide](https://stackoverflow.com/questions/315911/git-for-beginners-the-definitive-practical-guide)
 - [The Git docs](https://git-scm.com/doc)
+
+---
+
+## Thank you for your attention!
