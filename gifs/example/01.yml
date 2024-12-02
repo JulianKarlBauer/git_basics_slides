@@ -130,9 +130,9 @@ records:
   - delay: 192
     content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;git init\a\e]1;git\a"
   - delay: 28
-    content: "Initialized empty Git repository in /home/julian/git/my_project/.git/\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                  \r \r\e]2;julian@bertoldi:~/git/git_basics_slides/gifs/01/my_project\a\e]1;..01/my_project\a"
+    content: "Initialized empty Git repository in /home/julian/git/my_project/.git/\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                  \r \r\e]2;julian@pc:~/git/git_basics_slides/gifs/01/my_project\a\e]1;..01/my_project\a"
   - delay: 8
-    content: "\e]7;file://bertoldi/home/julian/git/git_basics_slides/gifs/01/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mcontent\e[34m) \e[33m✗\e[00m \e[K\e[?1h\e=\e[?2004h"
+    content: "\e]7;file://pc/home/julian/git/git_basics_slides/gifs/01/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mcontent\e[34m) \e[33m✗\e[00m \e[K\e[?1h\e=\e[?2004h"
   - delay: 28
     content: "\r\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e[K"
   - delay: 1712
@@ -164,8 +164,8 @@ records:
   - delay: 9
     content: "On branch main\r\n\r\nNo commits yet\r\n\r\nUntracked files:\r\n  (use \"git add <file>...\" to include in what will be committed)\r\n\t\e[31mmain.py\e[m\r\n\r\nnothing added to commit but untracked files present (use \"git add\" to track)\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                  \r \r"
   - delay: 6
-    content: "\e]2;julian@bertoldi:~/git/git_basics_slides/gifs/01/my_project\a\e]1;..01/my_project\a"
+    content: "\e]2;julian@pc:~/git/git_basics_slides/gifs/01/my_project\a\e]1;..01/my_project\a"
   - delay: 11
-    content: "\e]7;file://bertoldi/home/julian/git/git_basics_slides/gifs/01/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e[K\e[?1h\e=\e[?2004h"
+    content: "\e]7;file://pc/home/julian/git/git_basics_slides/gifs/01/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e[K\e[?1h\e=\e[?2004h"
   - delay: 2213
     content: "\e[?2004l\r\r\n"

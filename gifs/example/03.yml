@@ -109,7 +109,7 @@ config:
 # Records, feel free to edit them
 records:
   - delay: 9
-    content: "\e]7;file://bertoldi/home/julian/git/git_basics_slides/gifs/example_init_dir/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[K\e[?1h\e=\e[?2004h"
+    content: "\e]7;file://pc/home/julian/git/git_basics_slides/gifs/example_init_dir/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[K\e[?1h\e=\e[?2004h"
   - delay: 37
     content: "\r\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e[K"
   - delay: 220
@@ -185,10 +185,10 @@ records:
   - delay: 568
     content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;git commit -m \"Add original file\"\a\e]1;git\a"
   - delay: 10
-    content: "Author identity unknown\r\n\r\n*** Please tell me who you are.\r\n\r\nRun\r\n\r\n  git config --global user.email \"you@example.com\"\r\n  git config --global user.name \"Your Name\"\r\n\r\nto set your account's default identity.\r\nOmit --global to set the identity only in this repository.\r\n\r\nfatal: unable to auto-detect email address (got 'julian@bertoldi.(none)')\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                  \r \r"
+    content: "Author identity unknown\r\n\r\n*** Please tell me who you are.\r\n\r\nRun\r\n\r\n  git config --global user.email \"you@example.com\"\r\n  git config --global user.name \"Your Name\"\r\n\r\nto set your account's default identity.\r\nOmit --global to set the identity only in this repository.\r\n\r\nfatal: unable to auto-detect email address (got 'julian@pc.(none)')\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                  \r \r"
   - delay: 6
-    content: "\e]2;julian@bertoldi:~/git/git_basics_slides/gifs/example_init_dir/my_project\a\e]1;..ir/my_project\a"
+    content: "\e]2;julian@pc:~/git/git_basics_slides/gifs/example_init_dir/my_project\a\e]1;..ir/my_project\a"
   - delay: 11
-    content: "\e]7;file://bertoldi/home/julian/git/git_basics_slides/gifs/example_init_dir/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;31m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e[K\e[?1h\e=\e[?2004h"
+    content: "\e]7;file://pc/home/julian/git/git_basics_slides/gifs/example_init_dir/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;31m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e[K\e[?1h\e=\e[?2004h"
   - delay: 1824
     content: "\e[?2004l\r\r\n"

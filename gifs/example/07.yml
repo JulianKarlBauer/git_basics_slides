@@ -109,7 +109,7 @@ config:
 # Records, feel free to edit them
 records:
   - delay: 5
-    content: "\e]7;file://bertoldi/home/julian/git/git_basics_slides/gifs/example/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[K\e[?1h\e=\e[?2004h"
+    content: "\e]7;file://pc/home/julian/git/git_basics_slides/gifs/example/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[K\e[?1h\e=\e[?2004h"
   - delay: 11
     content: "\r\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e[K"
   - delay: 181

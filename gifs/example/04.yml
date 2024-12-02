@@ -115,7 +115,7 @@ records:
   - delay: 100
     content: "\e[1C"
   - delay: 100
-    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;git config --local user.email \"julian@blub.com\"\a\e]1;git\a\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                  \r \r\e]2;julian@bertoldi:~/git/git_basics_slides/gifs/example_init_dir/my_project\a\e]1;..ir/my_project\a\e]7;file://bertoldi/home/julian/git/git_basics_slides/gifs/example_init_dir/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e[K\e[?1h\e=\e[?2004h"
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;git config --local user.email \"julian@blub.com\"\a\e]1;git\a\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                  \r \r\e]2;julian@pc:~/git/git_basics_slides/gifs/example_init_dir/my_project\a\e]1;..ir/my_project\a\e]7;file://pc/home/julian/git/git_basics_slides/gifs/example_init_dir/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e[K\e[?1h\e=\e[?2004h"
   - delay: 400
     content: git config --local user.name "julian"
   - delay: 100
@@ -123,9 +123,9 @@ records:
   - delay: 9
     content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                  \r \r"
   - delay: 6
-    content: "\e]2;julian@bertoldi:~/git/git_basics_slides/gifs/example_init_dir/my_project\a\e]1;..ir/my_project\a"
+    content: "\e]2;julian@pc:~/git/git_basics_slides/gifs/example_init_dir/my_project\a\e]1;..ir/my_project\a"
   - delay: 15
-    content: "\e]7;file://bertoldi/home/julian/git/git_basics_slides/gifs/example_init_dir/my_project\e\\"
+    content: "\e]7;file://pc/home/julian/git/git_basics_slides/gifs/example_init_dir/my_project\e\\"
   - delay: 6
     content: "\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e[K\e[?1h\e=\e[?2004h"
   - delay: 300
@@ -133,7 +133,7 @@ records:
   - delay: 500
     content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;git commit -m \"Add original file\"\a\e]1;git\a"
   - delay: 5
-    content: "[main (root-commit) 0166b9f] Add original file\r\n 1 file changed, 4 insertions(+)\r\n create mode 100644 main.py\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                  \r \r\e]2;julian@bertoldi:~/git/git_basics_slides/gifs/example_init_dir/my_project\a\e]1;..ir/my_project\a\e]7;file://bertoldi/home/julian/git/git_basics_slides/gifs/example_init_dir/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e[K\e[?1h\e=\e[?2004h"
+    content: "[main (root-commit) 0166b9f] Add original file\r\n 1 file changed, 4 insertions(+)\r\n create mode 100644 main.py\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                  \r \r\e]2;julian@pc:~/git/git_basics_slides/gifs/example_init_dir/my_project\a\e]1;..ir/my_project\a\e]7;file://pc/home/julian/git/git_basics_slides/gifs/example_init_dir/my_project\e\\\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m) \e[33m✗\e[00m \e[K\e[?1h\e=\e[?2004h"
   - delay: 11
     content: "\r\r\e[0m\e[27m\e[24m\e[J\e[01;32m➜  \e[36mmy_project\e[00m \e[01;34mgit:(\e[31mmain\e[34m)\e[00m \e[K"
 
