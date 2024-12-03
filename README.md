@@ -11,7 +11,7 @@ We use the (node-based)
 based on
 [this template repository](https://github.com/yhatt/marp-cli-example?tab=readme-ov-file).
 
-## Build the Presentation
+### Build the Presentation
 
 Install VS-Code extension `marp` to have a real time build during development.
 
