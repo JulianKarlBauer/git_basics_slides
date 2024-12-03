@@ -37,3 +37,5 @@ terminalizer render demo
 ```
 
 ## Peek
+
+Not used but useful to turn your screen into a gif.
