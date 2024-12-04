@@ -10,7 +10,7 @@ _paginate: false # No page number on first slide
 math: mathjax
 author: Julian Karl Bauer
 # header:
-footer: 04.12.2024, Julian Karl Bauer, Commit to Git?
+footer: 04.12.2024 Julian Karl Bauer Commit to Git?
 ---
 
 # Commit to Git?
