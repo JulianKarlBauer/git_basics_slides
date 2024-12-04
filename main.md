@@ -975,7 +975,7 @@ And there are several options...
 
 
 * Develop multiple features
-* Develop different variantes
+* Develop different variants
 * **Make a proposal**
 
 
@@ -1121,9 +1121,8 @@ There is Git Large File Storage to keep repos small and work with large files as
 - The Git way of working: Change, add, commit, pull, push, repeat
 - Applications:
   - File structures, e.g.,
-    - Code
+    - Any computational project
     - Latex
-    - A computational project
 
 <!--
 
@@ -1149,7 +1148,6 @@ Applications: Everything which represents a file structure.
 - Hooks, e.g., `pre-commit`
 - Github / Gitlab
 - Continuos integration (CI) with Github Actions / Gitlab CI/CD
-- Git large file storage (LFS) at your university
 - [Git workflows][git_workflows_atlassian]: Centralized, feature branching, gitflow workflows, forking workflow
 
 [git_workflows_atlassian]: https://www.atlassian.com/git/tutorials/comparing-workflows
